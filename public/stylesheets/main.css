@@ -1,0 +1,24 @@
+.jumbotron {
+    margin: 1.0em;
+}
+.col-md-9 {
+    padding: 1.0em;
+}
+.card {
+    padding: 1%;
+}
+.img-thumbnail img {
+    width: 100%;
+}
+.img-thumbnail {
+    margin: 20px auto;
+}
+.img-thumbnail .caption-full {
+    padding: 5px;
+}
+.navbar-nav {
+    align-items: center;
+}
+#delete-form {
+    display: inline;
+}
