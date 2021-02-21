@@ -1,6 +1,7 @@
 //all middleware goes in here
 var middlewareObj = {};
 
+//check campgrounds ownership
 middlewareObj.checkCampgroundOwnership = function(req, res, next) {
     console.log("params", req.params);
     if(req.isAuthenticated()){
@@ -25,6 +26,7 @@ middlewareObj.checkCampgroundOwnership = function(req, res, next) {
     }
 }
 
+//check comments ownership
 middlewareObj.checkCommentOwnership = function(req, res, next) {
     console.log("params", req.params);
     if(req.isAuthenticated()){
@@ -48,6 +50,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next) {
     }
 }
 
+//check if user is logged in
 middlewareObj.isLoggedIn = function isLoggedIn(req, res, next){
     if(req.isAuthenticated()){
         return next();
